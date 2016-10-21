@@ -15,7 +15,7 @@ public class FPP12P {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) {//DECLARAR VARIABLES
         int [] a=new int[10];
         
         a=Numeros(a);
@@ -24,7 +24,7 @@ public class FPP12P {
         
                 
     }
-    public static int [] Numeros(int[] a){
+    public static int [] Numeros(int[] a){//METODO PARA INTRODUCIR NUMERO EN LA POSICION DE TAL ARREGLO
          Scanner teclado = new Scanner(System.in);
 for(int i=0;i<a.length;i++){
 System.out.print("Introduce Numero en el arreglo ["+ (i+1) +"] :");
@@ -34,7 +34,7 @@ a[i]=teclado.nextInt();
     }
 return a;
     }
-    public static void mostrarNumero(int[] a){
+    public static void mostrarNumero(int[] a){//MOSTRAR PROMEDIO DE LOS NUMEROS INGRESADOS
         int b=0,c=0,r;
        
         for(int i=1;i<a.length;i+=2){
